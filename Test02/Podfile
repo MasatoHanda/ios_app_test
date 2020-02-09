@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Test02' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'Charts', '~> 3.0'
+  use_frameworks!
+
+
+  # Pods for Test02
+
+  target 'Test02Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Test02UITests' do
+    # Pods for testing
+  end
+
+end
