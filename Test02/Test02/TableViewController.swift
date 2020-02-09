@@ -51,6 +51,10 @@ class TableViewController: UITableViewController {
             tableView.deselectRow(at: indexPath, animated: true)
             performSegue(withIdentifier: "toSample1", sender: nil)
             break
+        case 1:
+            tableView.deselectRow(at: indexPath, animated: true)
+            performSegue(withIdentifier: "toSample2", sender: nil)
+            break
         default:
             break
         }
