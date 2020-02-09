@@ -62,7 +62,7 @@ class Sample2ViewController: UIViewController {
         SleepDurationGraph.xAxis.valueFormatter = TimeAxisFormatter()
         SleepDurationGraph.xAxis.labelPosition = .bottom
         SleepDurationGraph.xAxis.drawGridLinesEnabled = false
-        SleepDurationGraph.xAxis.labelCount = 12
+        SleepDurationGraph.xAxis.labelCount = 3
         SleepDurationGraph.xAxis.spaceMin = 0.5
         SleepDurationGraph.xAxis.spaceMax = 0.5
         SleepDurationGraph.xAxis.yOffset = 0
