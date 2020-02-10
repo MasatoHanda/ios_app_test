@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adS-sy-hIG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adS-sy-hIG">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,6 +34,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="toSample1" id="oWY-SL-f0J"/>
                         <segue destination="GnI-fc-add" kind="push" identifier="toSample2" id="9nE-Ok-dZn"/>
+                        <segue destination="g3t-2h-ira" kind="push" identifier="toSample3" id="dMc-HA-S4d"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMm-dy-XxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0f-3l-OJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088.8" y="986.35682158920542"/>
+            <point key="canvasLocation" x="1089" y="813"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="As4-lA-23Z">
@@ -139,6 +140,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9F-AC-PnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-655.20000000000005" y="113.79310344827587"/>
+        </scene>
+        <!--Sample3 View Controller-->
+        <scene sceneID="yjI-uc-lLE">
+            <objects>
+                <viewController id="g3t-2h-ira" customClass="Sample3ViewController" customModule="Test02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dku-OM-oap">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="451-e7-uqH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pyq-N5-dmc">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="xHX-b4-Bpb">
+                            <rect key="frame" x="126.5" y="6" width="122" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="3日"/>
+                                <segment title="週"/>
+                                <segment title="月"/>
+                            </segments>
+                            <connections>
+                                <action selector="tapSegmentedControl:" destination="g3t-2h-ira" eventType="valueChanged" id="lv0-LK-g7c"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="xHX-b4-Bpb" id="oQ5-QM-UTi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vv-eK-bcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="1566"/>
+        </scene>
+        <!--Sample3 Child1 View Controller-->
+        <scene sceneID="Dsk-rq-6h9">
+            <objects>
+                <viewController storyboardIdentifier="Sample3Child1ViewController" id="jy2-AB-VpJ" customClass="Sample3Child1ViewController" customModule="Test02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sq0-8R-uvE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qiv-Ia-vQt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agi-lr-wTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1985" y="1566"/>
+        </scene>
+        <!--Sample3 Child2 View Controller-->
+        <scene sceneID="JBz-WW-b8p">
+            <objects>
+                <viewController storyboardIdentifier="Sample3Child2ViewController" id="6xJ-lv-V2n" customClass="Sample3Child2ViewController" customModule="Test02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZe-au-agh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UCM-aa-wGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ie2-KX-JgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2892" y="1566"/>
+        </scene>
+        <!--Sample3 Child3 View Controller-->
+        <scene sceneID="6ld-fR-eOJ">
+            <objects>
+                <viewController storyboardIdentifier="Sample3Child3ViewController" id="RxE-KM-jLP" customClass="Sample3Child3ViewController" customModule="Test02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T91-t6-8uu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="fyV-Qr-Fvi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2z-KF-lYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3774" y="1566"/>
         </scene>
     </scenes>
 </document>

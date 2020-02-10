@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4430BCBD23F105C800280FE2 /* Sample3Child1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430BCBC23F105C800280FE2 /* Sample3Child1ViewController.swift */; };
+		4430BCBF23F105EE00280FE2 /* Sample3Child2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430BCBE23F105EE00280FE2 /* Sample3Child2ViewController.swift */; };
+		4430BCC123F1061700280FE2 /* Sample3Child3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430BCC023F1061700280FE2 /* Sample3Child3ViewController.swift */; };
+		4430BCC323F1063100280FE2 /* Sample3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430BCC223F1063100280FE2 /* Sample3ViewController.swift */; };
 		44B5592223EE864700277076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5592123EE864700277076 /* AppDelegate.swift */; };
 		44B5592423EE864700277076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5592323EE864700277076 /* SceneDelegate.swift */; };
 		44B5592623EE864700277076 /* Sample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5592523EE864700277076 /* Sample1ViewController.swift */; };
@@ -43,6 +47,10 @@
 		188E4D0CBF3BFF93A0DBAADD /* Pods_Test02_Test02UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test02_Test02UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C68C333499CE1A7A1FD6D6 /* Pods-Test02Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test02Tests.release.xcconfig"; path = "Target Support Files/Pods-Test02Tests/Pods-Test02Tests.release.xcconfig"; sourceTree = "<group>"; };
 		408462D705B879A8CFF3CBCF /* Pods_Test02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4430BCBC23F105C800280FE2 /* Sample3Child1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3Child1ViewController.swift; sourceTree = "<group>"; };
+		4430BCBE23F105EE00280FE2 /* Sample3Child2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3Child2ViewController.swift; sourceTree = "<group>"; };
+		4430BCC023F1061700280FE2 /* Sample3Child3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3Child3ViewController.swift; sourceTree = "<group>"; };
+		4430BCC223F1063100280FE2 /* Sample3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3ViewController.swift; sourceTree = "<group>"; };
 		44B5591E23EE864700277076 /* Test02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5592123EE864700277076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5592323EE864700277076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,10 +132,14 @@
 				44B5592323EE864700277076 /* SceneDelegate.swift */,
 				44B5592523EE864700277076 /* Sample1ViewController.swift */,
 				44F60A1423EFA321001CD94C /* Sample2ViewController.swift */,
+				4430BCC223F1063100280FE2 /* Sample3ViewController.swift */,
+				4430BCBC23F105C800280FE2 /* Sample3Child1ViewController.swift */,
+				4430BCBE23F105EE00280FE2 /* Sample3Child2ViewController.swift */,
+				4430BCC023F1061700280FE2 /* Sample3Child3ViewController.swift */,
 				44F60A1023EED4B9001CD94C /* TableViewController.swift */,
 				44B5592723EE864700277076 /* Main.storyboard */,
-				44B5592A23EE864800277076 /* Assets.xcassets */,
 				44B5592C23EE864800277076 /* LaunchScreen.storyboard */,
+				44B5592A23EE864800277076 /* Assets.xcassets */,
 				44B5592F23EE864800277076 /* Info.plist */,
 			);
 			path = Test02;
@@ -414,9 +426,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B5592623EE864700277076 /* Sample1ViewController.swift in Sources */,
+				4430BCBD23F105C800280FE2 /* Sample3Child1ViewController.swift in Sources */,
 				44B5592223EE864700277076 /* AppDelegate.swift in Sources */,
+				4430BCC323F1063100280FE2 /* Sample3ViewController.swift in Sources */,
 				44F60A1523EFA321001CD94C /* Sample2ViewController.swift in Sources */,
 				44B5592423EE864700277076 /* SceneDelegate.swift in Sources */,
+				4430BCC123F1061700280FE2 /* Sample3Child3ViewController.swift in Sources */,
+				4430BCBF23F105EE00280FE2 /* Sample3Child2ViewController.swift in Sources */,
 				44F60A1123EED4B9001CD94C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
