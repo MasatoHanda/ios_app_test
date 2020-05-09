@@ -34,7 +34,7 @@ jobs:
     - name: Build
       run: |
         cd Test02
-        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug build
+        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -sdk iphonesimulator -configuration Debug build
         
       #xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -sdk iphonesimulator -configuration Debug build
       #run: swift build -v
