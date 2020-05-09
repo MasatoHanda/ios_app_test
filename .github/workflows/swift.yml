@@ -32,5 +32,7 @@ jobs:
       
     # ビルド
     - name: Build
-      run: xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug archive -archivePath ./build/
+      run: |
+        cd Test02
+        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug archive -archivePath ./build/
       #run: swift build -v
