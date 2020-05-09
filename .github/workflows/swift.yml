@@ -34,5 +34,6 @@ jobs:
     - name: Build
       run: set -o pipefail &&
         cd Test02
+        | pwd
         | xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug
       #run: swift build -v
