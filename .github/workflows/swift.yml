@@ -34,6 +34,7 @@ jobs:
     - name: Build
       run: |
         cd Test02
-        pwd
-        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug -allowProvisioningUpdates
+        xcodebuild -workspace ./Test02.xcworkspace -sdk iphonesimulator -configuration Debug build
+        
+      #xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug -allowProvisioningUpdates
       #run: swift build -v
