@@ -25,7 +25,10 @@ jobs:
 
     # CocoaPodsで管理しているライブラリのインストール
     - name: Pod install
-      run: pod install
+      run: |
+        pwd
+        cd Test02 
+        pod install
       
     # ビルド
     - name: Build
