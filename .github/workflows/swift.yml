@@ -35,5 +35,5 @@ jobs:
       run: |
         cd Test02
         pwd
-        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug
+        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug -allowProvisioningUpdates
       #run: swift build -v
