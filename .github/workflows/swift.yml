@@ -32,7 +32,8 @@ jobs:
       
     # ビルド
     - name: Build
-      run: |
+      run: set -o pipefail &&
         cd Test02
-        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug archive -archivePath ./build/
+        | xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug
+        | bundle exec xcpretty
       #run: swift build -v
