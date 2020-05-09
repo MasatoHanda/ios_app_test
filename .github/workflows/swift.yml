@@ -1,0 +1,39 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    # CocoaPodsで管理しているライブラリのキャッシュ復元
+    - name: Cache Pods
+      uses: actions/cache@v1
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
+
+    # CocoaPodsで管理しているライブラリのインストール
+    - name: Pod install
+      run: |
+        pwd
+        cd Test02 
+        pod install
+      
+    # ビルド
+    - name: Build
+      run: |
+        cd Test02
+        pwd
+        xcodebuild -workspace ./Test02.xcworkspace -scheme Test02 -configuration Debug
+      #run: swift build -v
